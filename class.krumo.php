@@ -1089,7 +1089,7 @@ This is a list of all the values from the <code><b><?php echo realpath($ini_file
 ?>
 <li class="krumo-child">
 	<div class="krumo-element<?php echo $elementClasses; ?>"
-		<?php if ($childCount > 0) {?> onClick="krumo.toggle(this);"<?php } ?>
+		<?php if ($childCount > 0) {?> onClick="krumo.toggle(this,arguments[0] || window.event);"<?php } ?>
 		onMouseOver="krumo.over(this);"
 		onMouseOut="krumo.out(this);">
 		
