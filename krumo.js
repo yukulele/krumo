@@ -86,7 +86,7 @@ krumo.toggle = function(el,event,force) {
 * @return void
 */
 krumo.toggleAll = function(el) {
-	var divs = document.getElementsByTagName("div");
+	var divs = el.parentNode.getElementsByTagName("div");
 	var isNest = /\bkrumo-nest\b/;
 	var nests = [];
 	var i = 0;
